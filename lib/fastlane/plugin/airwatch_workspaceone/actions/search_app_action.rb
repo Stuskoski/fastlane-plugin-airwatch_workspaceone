@@ -45,7 +45,7 @@ module Fastlane
         
         UI.message("----------------------------------------------")
         for item in app_versions 
-          UI.message("Version: #{item['AppVersion']};  Status: #{item['Status']}; Assigned :#{item['AssignedDeviceCount']}; Installed: #{item['InstalledDeviceCount']}; Not Installed: #{item['NotInstalledDeviceCount']}; Smart Groups: #{item['SmartGroups']}") 
+          UI.message("Version: #{item['AppVersion']};  Status: #{item['Status']}; Assigned: #{item['AssignedDeviceCount']}; Installed: #{item['InstalledDeviceCount']}; Not Installed: #{item['NotInstalledDeviceCount']}; Smart Groups: #{item['SmartGroups']}") 
           UI.message("----------------------------------------------")
         end
 
