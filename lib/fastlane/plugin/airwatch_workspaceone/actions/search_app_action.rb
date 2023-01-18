@@ -11,7 +11,6 @@ module Fastlane
       $app_id_int
 
       def self.run(params)
-        UI.message("The airwatch_workspaceone plugin is working!")
 
         # check if debug is enabled
         $is_debug = params[:debug]
@@ -32,7 +31,7 @@ module Fastlane
         app_identifier          = params[:app_identifier]
 
         UI.message("----------------------------------------------")
-        UI.message("App Name:  #{params[:app_identifier]}")
+        UI.message("App Name: #{params[:app_identifier]}")
 
         apps = search_app_versions(app_identifier, $host_url, $aw_tenant_code, $b64_encoded_auth, debug)
         app_versions = apps['Application']
