@@ -126,7 +126,10 @@ module Fastlane
         end
 
         smart_groups['SmartGroups'].each do |smart_group|
-          smart_group_id = smart_group['SmartGroupID']
+          if smart_group['Name'] == smart_group_name
+            smart_group_id = smart_group['SmartGroupID']
+            break
+          end
         end
 
         return smart_group_id
